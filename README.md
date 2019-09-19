@@ -13,3 +13,14 @@ $ docker run -it --network wp-network --rm mysql mysql -hwpdb -uroot -p
 $ docker network create NAME
 $ docker network connect NETWORKNAME NAME --alias ALIAS;
 $ docker network connect NETWORKNAME NAME --alias ALIAS
+
+
+# OR USE DOCKER-COMPOSE.YML
+from working directory run 
+$ docker-compose up -d 
+
+#remove containers and default network, but preserves WordPress database
+$ docker-compose down
+
+#remove everything with database
+$ docker-compose down --volumes
