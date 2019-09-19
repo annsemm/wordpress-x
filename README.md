@@ -3,11 +3,9 @@ $ build -t=NAME PATH         #start image from dockerfile
 $ docker run -p 4000:80 NAME #connect to port 4000 localhost
 
 # ADD DATABASE
-$  docker run --name wpdb -e MYSQL_ROOT_PASSWORD=MyPassword1! -d mysql:latest
+$  docker run --name wpdb -e MYSQL_ROOT_PASSWORD=MyPassword1! -d mysql:latest #create database
 
-#Connect to MySQL from the MySQL command line client
-
-$ docker run -it --network wp-network --rm mysql mysql -hwpdb -uroot -p
+$ docker run -it --network wp-network --rm mysql mysql -hwpdb -uroot -p #Connect to MySQL from the MySQL command line client
 
 # CREATE NETWORK
 $ docker network create NAME
