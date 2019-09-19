@@ -9,7 +9,9 @@ $ docker run -it --network wp-network --rm mysql mysql -hwpdb -uroot -p #Connect
 
 # CREATE NETWORK
 $ docker network create NAME
-$ docker network connect NETWORKNAME NAME --alias ALIAS;
+
+$ docker network connect NETWORKNAME NAME --alias ALIAS
+
 $ docker network connect NETWORKNAME NAME --alias ALIAS
 
 
