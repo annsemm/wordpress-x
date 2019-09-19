@@ -16,11 +16,11 @@ $ docker network connect NETWORKNAME NAME --alias ALIAS
 
 
 # OR USE DOCKER-COMPOSE.YML
-from working directory run 
-$ docker-compose up -d 
 
-#remove containers and default network, but preserves WordPress database
-$ docker-compose down
+$ docker-compose up -d #from working directory run 
 
-#remove everything with database
-$ docker-compose down --volumes
+
+$ docker-compose down #remove containers and default network, but preserves WordPress database
+
+
+$ docker-compose down --volumes #remove everything with database
