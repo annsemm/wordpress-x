@@ -6,6 +6,7 @@ $ docker run -p 4000:80 NAME #connect to port 4000 localhost
 $  docker run --name wpdb -e MYSQL_ROOT_PASSWORD=MyPassword1! -d mysql:latest
 
 #Connect to MySQL from the MySQL command line client
+
 $ docker run -it --network wp-network --rm mysql mysql -hwpdb -uroot -p
 
 # CREATE NETWORK
